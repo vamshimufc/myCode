@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+
+  <PropertyGroup Label="Build">
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <!-- Use the latest version of the C# language. -->
+    <LangVersion>latest</LangVersion>
+    <!-- CS1591 - Don't warn about all public members not being documented. -->
+    <NoWarn Condition="'$(Swagger)' == 'true'">$(NoWarn);CS1591</NoWarn>
+    <GenerateDocumentationFile Condition="'$(Swagger)' == 'true'">true</GenerateDocumentationFile>
+    <!-- Used to store connection strings and other sensitive settings, so you don't have to check them into your source
+         control provider. Only use this in Development, it is not intended for Production use.
+         See http://docs.asp.net/en/latest/security/app-secrets.html -->
+    <UserSecretsId>ApiTemplate-4962E69F-CFBB-4B12-85FB-E0BDB9298059</UserSecretsId>
+    <!-- Enable tiered JIT compilation for better performance.
+         See http://mattwarren.org/2017/12/15/How-does-.NET-JIT-a-method-and-Tiered-Compilation/ -->
+    <TieredCompilation>true</TieredCompilation>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Package">
+    <Version>0.0.1</Version>
+    <Authors>Vamshidhar Kodavatikanti (vamshidharreddy@wustl.edu)</Authors>
+    <Company>Enterprise Applications</Company>
+    <Product>Workday HR to SIS</Product>
+    <Description>Retrieve relevant HR data from Workday and populate SIS Datastore for downstream processing</Description>
+    <Copyright>Copyright © Washington University Saint Louis - Enterprise Applications. All rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Database\**" />
+    <Content Remove="Database\**" />
+    <EmbeddedResource Remove="Database\**" />
+    <None Remove="Database\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DraMappingProfile.cs" />
+    <Compile Remove="ImportManagers\EmploymentPositionManager.cs" />
+    <Compile Remove="ImportManagers\EmploymentProfileManager.cs" />
+    <Compile Remove="ImportManagers\OrganizationManager.cs" />
+    <Compile Remove="Manager.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="tempkey.rsa" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Boxed.AspNetCore" Version="2.2.2" />
+    <PackageReference Include="Boxed.AspNetCore.Swagger" Version="3.0.1" />
+    <PackageReference Include="EA.Mulesoft" Version="2.0.1-RC2" />
+    <PackageReference Include="EA.Serilog.Sinks.StaticRolling" Version="1.1.0" />
+    <PackageReference Include="EA.TaskRunner" Version="3.2.2" />
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
+    <PackageReference Include="IdentityModel" Version="3.10.10" />
+    <PackageReference Include="IdentityServer4" Version="2.5.2" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.1" PrivateAssets="All" />
+    <PackageReference Include="CorrelationId" Version="2.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.3" />
+    <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.1" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+    <PackageReference Include="Serilog.Exceptions" Version="5.3.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="1.0.1" />
+    <PackageReference Include="Serilog.Sinks.Splunk" Version="3.3.0" />
+    
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="3.0.0" />
+
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization.Policy" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.1.1.0" />
+
+
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1development_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>
+

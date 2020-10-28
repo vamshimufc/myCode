@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E6DBE11-EB5F-4EA8-868F-C3585DF89B1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wdhrtosis", "src\wdhrtosis\wdhrtosis.csproj", "{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCF521A0-BE54-446A-9356-2C211AA27C1F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		nuget.config = nuget.config
+		ReadMe.html = ReadMe.html
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{96EEEA1C-AB13-4C87-B07B-57D55BFFC0FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wdhrtosis.IntegrationTests", "tests\wdhrtosis.IntegrationTests\wdhrtosis.IntegrationTests.csproj", "{810497B7-2E03-497F-8B9E-7397BDCB7542}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Debug|x64.Build.0 = Debug|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Debug|x86.Build.0 = Debug|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Release|x64.ActiveCfg = Release|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Release|x64.Build.0 = Release|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Release|x86.ActiveCfg = Release|Any CPU
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111}.Release|x86.Build.0 = Release|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Debug|x64.Build.0 = Debug|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Debug|x86.Build.0 = Debug|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Release|x64.ActiveCfg = Release|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Release|x64.Build.0 = Release|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Release|x86.ActiveCfg = Release|Any CPU
+		{810497B7-2E03-497F-8B9E-7397BDCB7542}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4E2C190-C7C3-4E07-90D5-9DB3A734D111} = {1E6DBE11-EB5F-4EA8-868F-C3585DF89B1E}
+		{810497B7-2E03-497F-8B9E-7397BDCB7542} = {96EEEA1C-AB13-4C87-B07B-57D55BFFC0FE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {466436C8-4533-40DE-BB4A-54FB76FBC1AD}
+	EndGlobalSection
+EndGlobal
